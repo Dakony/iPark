@@ -1,0 +1,45 @@
+<resources>
+    <string name="app_name">iPark</string>
+    <string name="title_activity_main">iPark</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="don_t_have_account_yet_register">Don\'t have account yet? Register</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="login">login</string>
+    <string name="next">next</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="plate_number">Plate Number</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="full_name">Full Name</string>
+
+    <!-- Firebase Database Nodes -->
+    <string name="dbnode_users">users</string>
+
+
+    <!-- Dialog Names -->
+    <string name="dialog_login">Login</string>
+
+    <!-- Firebase Database Fields -->
+
+    <string name="field_creator_id">creator_id</string>
+    <string name="field_plate_number">plate_number</string>
+    <string name="field_email">email</string>
+    <string name="field_name">name</string>
+    <string name="field_phone">phone</string>
+    <string name="field_profile_image">profile_image</string>
+    <string name="field_user_id">user_id</string>
+
+    <string name="field_timestamp">timestamp</string>
+    <string name="password_empty">Please Password Cannot be Empty</string>
+    <string name="valid_email">Please Provide a Valid Email</string>
+    <string name="email_empty">Please email cannot be Empty</string>
+    <string name="login_message">Please wait, while we are Authenticating your Account...</string>
+    <string name="profile_images">Profile Images</string>
+    <string name="db_post">Posts</string>
+
+
+</resources>

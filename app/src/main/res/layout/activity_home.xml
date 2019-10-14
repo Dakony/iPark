@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context="com.example.android.ipark.HomeActivity">
+
+    <EditText
+        android:id="@+id/input_email"
+        android:layout_width="@dimen/editTextWidth"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/standardMargin1"
+        android:layout_marginStart="@dimen/standardMargin1"
+        android:layout_marginTop="@dimen/topMargin"
+        android:background="@drawable/editextstyle"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:hint="@string/email"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/input_password"
+        android:layout_width="@dimen/editTextWidth"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/standardMargin1"
+        android:layout_marginStart="@dimen/standardMargin1"
+        android:layout_marginTop="@dimen/standardMargin2"
+        android:background="@drawable/editextstyle"
+        android:hint="@string/password"
+        android:ems="10"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/input_email" />
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="@dimen/buttonWidth"
+        android:layout_height="@dimen/buttonHeight"
+        android:layout_marginEnd="@dimen/standardMargin1"
+        android:layout_marginStart="@dimen/standardMargin1"
+        android:layout_marginTop="@dimen/standardMargin2"
+        android:background="@drawable/button"
+        android:textColor="@android:color/white"
+        android:text="@string/login"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/input_password" />
+
+    <TextView
+        android:id="@+id/input_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/standardMargin1"
+        android:layout_marginStart="@dimen/standardMargin1"
+        android:layout_marginTop="@dimen/standardMargin2"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:text="@string/don_t_have_account_yet_register"
+        android:textColor="@android:color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_login" />
+
+    <TextView
+        android:id="@+id/input_forgetpassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/standardMargin1"
+        android:layout_marginStart="@dimen/standardMargin1"
+        android:layout_marginTop="@dimen/standardMargin2"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:text="Forget Password"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/input_register" />
+</android.support.constraint.ConstraintLayout>

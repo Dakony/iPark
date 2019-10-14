@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#006064</color>
+    <color name="colorPrimaryDark">#00363a</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="blue_violet">#bc477b</color>
+    <color name="Azur">#F1F5F8</color>
+    <color name="mainBackground">#D7D7D7</color>
+    <color name="back">#111324</color>
+</resources>
