@@ -1,22 +1,15 @@
 package com.example.android.ipark.models;
 
 import android.support.annotation.NonNull;
-import android.widget.Toast;
 
 import com.example.android.ipark.MainActivity;
-import com.example.android.ipark.R;
 import com.google.firebase.auth.FirebaseAuth;
-import com.google.firebase.database.ChildEventListener;
-import com.google.firebase.database.DataSnapshot;
-import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.StorageReference;
 
 import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
 
 /**
  * Created by DAKONY on 7/31/2019.

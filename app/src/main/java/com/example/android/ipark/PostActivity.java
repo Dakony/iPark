@@ -1,6 +1,5 @@
 package com.example.android.ipark;
 
-import android.*;
 import android.Manifest;
 import android.app.ProgressDialog;
 import android.content.Context;
@@ -17,11 +16,9 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.android.ipark.models.User;
-import com.faltenreich.textinputview.TextInputView;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.FirebaseAuth;
@@ -50,7 +47,7 @@ public class PostActivity extends AppCompatActivity {
     LocationManager locationManager;
     String latitude, longitude;
     private ProgressDialog loadingBar;
-    User user;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -125,6 +122,7 @@ public class PostActivity extends AppCompatActivity {
                                 postMap.put("profileImage", userProfileImage);
                                 postMap.put(getString(R.string.field_name), fullname);
                                 postMap.put("counter", countPost);
+
 
 
                                 PostsRef.push().setValue(postMap).addOnCompleteListener(new OnCompleteListener() {

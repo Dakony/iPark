@@ -76,13 +76,7 @@ public class MainActivity extends AppCompatActivity
         UsersRefs = FirebaseDatabase.getInstance().getReference().child(getString(R.string.dbnode_users));
 
 
-        FirebaseUtil.openFbReference("Posts",this);
-        RecyclerView rvPosts = (RecyclerView)findViewById(R.id.rvPost);
-        final PostAdapter adapter = new PostAdapter();
-        rvPosts.setAdapter(adapter);
-        LinearLayoutManager dealsLayoutManager = new LinearLayoutManager(this,LinearLayoutManager.VERTICAL,false);
-        rvPosts.setLayoutManager(dealsLayoutManager);
-        //FirebaseUtil.attachListeer();
+
 
 
 
@@ -93,8 +87,13 @@ public class MainActivity extends AppCompatActivity
     @Override
     protected void onResume() {
         super.onResume();
-
-
+        FirebaseUtil.openFbReference("Posts",this);
+        RecyclerView rvPosts = (RecyclerView)findViewById(R.id.rvPost);
+        final PostAdapter adapter = new PostAdapter();
+        rvPosts.setAdapter(adapter);
+        LinearLayoutManager dealsLayoutManager = new LinearLayoutManager(this,LinearLayoutManager.VERTICAL,false);
+        rvPosts.setLayoutManager(dealsLayoutManager);
+        FirebaseUtil.attachListeer();
     }
 
     private void SendUserToPostActivity()

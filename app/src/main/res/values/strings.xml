@@ -18,6 +18,7 @@
 
     <!-- Firebase Database Nodes -->
     <string name="dbnode_users">users</string>
+    <string name="db_post">Posts</string>
 
 
     <!-- Dialog Names -->
@@ -39,7 +40,7 @@
     <string name="email_empty">Please email cannot be Empty</string>
     <string name="login_message">Please wait, while we are Authenticating your Account...</string>
     <string name="profile_images">Profile Images</string>
-    <string name="db_post">Posts</string>
+
 
 
 </resources>

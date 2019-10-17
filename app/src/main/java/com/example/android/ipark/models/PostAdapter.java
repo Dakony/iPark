@@ -1,7 +1,6 @@
 package com.example.android.ipark.models;
 
 import android.content.Context;
-import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -15,9 +14,11 @@ import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
+import java.util.List;
 
 import de.hdodenhof.circleimageview.CircleImageView;
 
@@ -28,20 +29,20 @@ import de.hdodenhof.circleimageview.CircleImageView;
 public class PostAdapter extends RecyclerView.Adapter<PostAdapter.PostViewHolder> {
     ArrayList<User>users;
     private ChildEventListener mChildEventListener;
-    private FirebaseDatabase mfirebaseDatabase;
     private DatabaseReference mDatabaseReferece;
     private CircleImageView post_profile_image;
 
+
+
     public PostAdapter(){
-        mfirebaseDatabase = FirebaseUtil.mFirebaseDatabase;
         mDatabaseReferece = FirebaseUtil.mDatabaseReference;
         users = FirebaseUtil.mUSers;
         mChildEventListener = new ChildEventListener() {
             @Override
             public void onChildAdded(DataSnapshot dataSnapshot, String s) {
                 User td = dataSnapshot.getValue(User.class);
-                Log.d("Deal",td.getName());
-                td.setName(dataSnapshot.getKey());
+                Log.d("Post",td.getName());
+                td.setUser_id(dataSnapshot.getKey());
                 users.add(td);
                 notifyItemInserted(users.size()-1);
 
